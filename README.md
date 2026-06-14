@@ -1,33 +1,11 @@
-# 404 // consolidated projects
+# 404
 
-welcome to the main repository for **404**. this repo consolidates two main projects built for **#horizons**:
+consolidated workspace for the horizons projects.
 
-1. **lost-memories** (`./lost-memories`): a visual, interactive 404-page experience structured as a maze of degraded data clusters. includes a local-storage session auth system for users to uplink custom memory signals.
-2. **void** (`./Void`): a digital detox dashboard that blocks mindless scroll apps (youtube, instagram) and inserts breathing, reflection, or focus-game exercises.
+### apps
+1. **lost-memories** (`./lost-memories`): interactive 404 maze.
+   - **demo**: https://lost-memories-zeta.vercel.app
+2. **void** (`./Void`): digital detox dashboard.
+   - **demo**: https://void-detox.vercel.app
 
----
-
-## project structure
-
-- `/lost-memories` - Next.js + Framer Motion + TypeScript + Web Audio API.
-- `/Void` - React + Vite + Vanilla CSS.
-
-Each directory has its own detailed, project-specific README.md describing the features, tech stack, and local running steps.
-
----
-
-## quick start
-
-### lost-memories
-```bash
-cd lost-memories
-npm install
-npm run dev
-```
-
-### void
-```bash
-cd Void
-npm install
-npm run dev
-```
+check out the README inside each project folder for setup details and features.

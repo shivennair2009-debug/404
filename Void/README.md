@@ -1,33 +1,27 @@
-# void // digital detox app
+# void // digital detox
 
-it is a simple app to help you stay away from mindless scrolling. when you want to open "guarded" apps (like mock youtube or instagram), void intervenes and forces you to pause, breathe, reflect, or play a quick focus game. 
+digital detox app built for #horizons. 
 
-built for **#horizons**.
+it intercepts mindless scrolling by guarding apps (like youtube and instagram). when you try to open them, it forces you to pause, breathe, reflect, or play a quick focus game before entering.
 
-## how it works
-1. **focus mode**: when toggled on, opening YouTube or Instagram triggers a 5-second countdown to make you think.
-2. **micro-interventions**: after the pause, you get one of three random exercises:
-   - 🌬️ **breathing**: a 14-second box-breathing cycle to slow down your heart rate.
-   - 💭 **reflection**: prompts you to write down *why* you are opening the app right now.
-   - 🎯 **focus game**: a quick game where you tap moving targets to regain active focus.
-3. **gamification**: you earn XP for every pause or exercise. leveling up takes you from *Rookie* -> *Focused* -> *Disciplined* -> *Mindful* -> *Zen Master*.
-4. **stats**: tracks your daily streak, total pauses, and total minutes saved from mindless scroll.
+### demo
+https://void-detox.vercel.app
 
-## tech stack
-- **core**: React + Vite + Vanilla CSS
-- **icons**: Lucide React
-- **state**: LocalStorage persistence (holds streak, levels, stats, and achievements)
+### features
+- **focus mode toggle**: turns interventions on or off.
+- **breathing exercise**: 14 seconds of box-breathing.
+- **reflections**: prompts to type why you are opening the app.
+- **focus target game**: quick tap target mini-game.
+- **gamification**: earn XP for pausing, check achievements, and level up from Rookie to Zen Master.
+- **stats dashboard**: tracks daily streak, total pauses, and estimated minutes saved.
 
-## running locally
-1. install dependencies:
-   ```bash
-   npm install
-   ```
-2. start dev server:
-   ```bash
-   npm run dev
-   ```
-3. build for production:
-   ```bash
-   npm run build
-   ```
+### tech
+- react + vite + vanilla css
+- lucide react (for icons)
+- localstorage (for state saving, streak tracking, and level ups)
+
+### how to run
+```bash
+npm install
+npm run dev
+```
