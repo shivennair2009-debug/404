@@ -1,25 +1,21 @@
-# lost memories
+# 404
 
-interactive 404 page made for #horizons. 
+an interactive 404 page built for #horizons. 
 
-wanted to build a 404 page that felt like a decaying digital graveyard instead of just a generic error. it splits different files/memories into status levels: stable, volatile, corrupted, and lost. 
+i wanted to make a 404 error page that actually feels like a decaying digital graveyard instead of a boring error message. it lets you explore files and data points split into different states of corruption: stable, volatile, critical, and completely lost.
 
-you can create an account, log in, uplink your own memories (even attach images), and save them directly to your profile.
+you can create an account, log in, uplink your own files/data to the index, and save them.
 
 ### demo
 https://lost-memories-zeta.vercel.app
 
-### screenshots
-![landing](public/screenshot1.png)
-![maze](public/screenshot2.png)
-
 ### tech
 - next.js + typescript
-- framer-motion (for the liquid bg blobs, hud lines, and maze transitions)
+- framer-motion (for the liquid meshes and node animations)
 - tailwind css
-- web audio api (synthesizes sound waves on the fly based on memory stability—no heavy audio files loaded)
+- web audio api (generates custom sound frequencies on hover based on how corrupted the data point is)
 
-### how to run
+### running it
 ```bash
 npm install
 npm run dev
