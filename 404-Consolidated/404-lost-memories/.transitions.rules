@@ -1,0 +1,42 @@
+# Transition Consistency Rules
+
+## System State: LOCKED ✓
+
+### Critical Values (Do Not Modify Without Reason)
+- Page transition duration: `1500ms`
+- Page transition easing: `easeInOut`
+- Loading bar visibility duration: `1500ms`
+- Loading bar animation: `400ms easeOut`
+- Blur exit state: `20px`
+- Scale enter state: `0.98`
+- Scale exit state: `1.05`
+
+### Architecture
+```
+Layout wraps PageTransition wraps Page Content
+LoadingBar rendered at layout level (above PageTransition)
+AnimatePresence mode="wait" ensures clean sequencing
+```
+
+### Sync Requirement
+LoadingBar and PageTransition durations MUST remain equal at 1500ms
+
+### Component Files
+- `/src/components/PageTransition.tsx` - Page animation wrapper
+- `/src/components/LoadingBar.tsx` - Navigation indicator bar
+- `/src/app/layout.tsx` - System integration point
+
+### When Adding Features
+1. Do not add animations during template transitions
+2. Do not override transition duration with page-level animations
+3. New pages automatically inherit transition system
+4. Background effects (like NoiseOverlay) are outside transition wrapper
+
+### Violations to Prevent
+- ❌ Page-level competing animations
+- ❌ Changing blur/scale without full system update
+- ❌ Removing PageTransition wrapper
+- ❌ Unsynchronized LoadingBar duration
+- ❌ Adding AnimatePresence inside PageTransition
+
+### Last Locked: May 16, 2026

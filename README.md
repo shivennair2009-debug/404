@@ -1,11 +1,13 @@
 # 404
 
-consolidated workspace for the horizons projects.
+my workspace repository for the #horizons submission. 
 
-### apps
-1. **lost-memories** (`./lost-memories`): interactive 404 maze.
-   - **demo**: https://lost-memories-zeta.vercel.app
-2. **void** (`./Void`): digital detox dashboard.
-   - **demo**: https://void-detox.vercel.app
+this repo contains the **lost-memories** app, which is an interactive 404 maze.
 
-check out the README inside each project folder for setup details and features.
+### project folder
+- `/lost-memories` - main project code (Next.js + TypeScript)
+
+### live demo
+https://lost-memories-zeta.vercel.app
+
+check out the README inside `lost-memories/` for setup and running steps.

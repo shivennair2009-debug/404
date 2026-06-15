@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-foreground: #a0a0a0;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-space-mono), monospace;
+  --font-serif: var(--font-cormorant), serif;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #a0a0a0;
+}
+
+body {
+  background-color: #050a0f;
+  color: var(--foreground);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Atmospheric aesthetic global styles - Visual Only */
+
+::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Static Cinematic Title Layering */
+.hollow-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
+
+/* Dreamy glow for the 404 statement */
+.dream-glow {
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.4), 0 0 80px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes noise-jitter {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-1%, -1%); }
+  20% { transform: translate(-2%, 1%); }
+  30% { transform: translate(1%, -2%); }
+  40% { transform: translate(-1%, 2%); }
+  50% { transform: translate(-2%, 1%); }
+  60% { transform: translate(2%, 0); }
+  70% { transform: translate(0, 2%); }
+  80% { transform: translate(1%, 1%); }
+  90% { transform: translate(-2%, 2%); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes scan-slow {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(500%); }
+}
+
+.animate-scan-slow {
+  animation: scan-slow 12s linear infinite;
+}

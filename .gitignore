@@ -1,12 +1,6 @@
 .DS_Store
-Thumbs.db
-*.log
 node_modules/
-dist/
-.env
 .next/
+dist/
 out/
-build/
-404-Consolidated/
-wakatime-home/
-summaries.json
+Void/
